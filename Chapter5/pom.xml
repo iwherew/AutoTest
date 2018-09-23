@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--
+       含义：组织标识，定义了项目属于哪个组，风向标，坐标，或者说把本项目打包
+       命名规范:项目名称，模块，子模块
+   -->
+    <groupId>com.course.code</groupId>
+
+    <!--
+       含义：项目名称也可以说所模块名称，定义为Maven项目在组中唯一的ID
+       命名规范:唯一
+   -->
+    <artifactId>Chapter5</artifactId>
+
+    <!--
+        含义：项目当前的版本号
+    -->
+    <version>1.0-SNAPSHOT</version>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.8.7</version>
+        </dependency>
+    </dependencies>
+
+</project>
