@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="suitename">
+    <test name="test1">
+        <classes>
+            <class name="firstPackage.FirstTestClass">
+                <methods>
+                    <include name="Test111"/>
+                </methods>
+            </class>
+
+            <class name="firstPackage.SecondTestClass">
+                <methods>
+                    <include name="Test121"/>
+                    <include name="Test122"/>
+                </methods>
+            </class>
+
+            <class name="secondPackage.FirstTestClass">
+                <methods>
+                    <exclude name="Test212"/>
+                </methods>
+            </class>
+        </classes>
+
+    </test>
+
+    <test name="test2">
+        <classes>
+            <class name="thirdPackage.FirstTestClass">
+                <methods>
+                    <include name="Test311"/>
+                </methods>
+            </class>
+
+            <class name="thirdPackage.SecondTestClass">
+                <methods>
+                    <exclude name="Test321"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="test3">
+        <classes>
+            <class name="secondPackage.SecondTestClass"/>
+        </classes>
+    </test>
+
+    <test name="test4">
+        <classes>
+            <class name="secondPackage.SecondTestClass">
+                <methods>
+                    <exclude name="Test222"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="test5">
+        <groups>
+            <run>
+                <include name="first"/>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="firstPackage.FirstTestClass"/>
+            <class name="firstPackage.SecondTestClass"/>
+            <class name="secondPackage.FirstTestClass"/>
+            <class name="secondPackage.SecondTestClass"/>
+        </classes>
+    </test>
+
+    <listeners>
+        <listener class-name="ExtentTestNGIReporterListenerOld"/>
+    </listeners>
+</suite>
