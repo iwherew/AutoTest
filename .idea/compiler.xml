@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Chapter5" />
         <module name="Chapter6" />
+        <module name="Demo" />
         <module name="PartTest" />
       </profile>
     </annotationProcessing>
@@ -15,6 +16,7 @@
       <module name="AutoTest" target="1.5" />
       <module name="Chapter5" target="1.5" />
       <module name="Chapter6" target="6" />
+      <module name="Demo" target="1.5" />
       <module name="PartTest" target="6" />
     </bytecodeTargetLevel>
   </component>

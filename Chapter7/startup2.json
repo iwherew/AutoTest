@@ -1,0 +1,132 @@
+[
+  {
+    "description":"first mock",
+    "request":{
+      "uri":"/demo"
+    },
+    "response":{
+      "text":"第一个moco",
+
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      }
+
+    }
+  },
+  {
+    "description":"模拟一个没有参数的get请求",
+    "request":{
+      "uri":"/getdemo",
+      "method":"get"
+    },
+    "response":{
+      "text":"没有参数的get请求",
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      }
+    }
+  },
+  {
+    "description":"模拟一个带参数的get请求",
+    "request":{
+      "uri":"/getwithparam",
+      "method":"get",
+      "queries":{
+        "name":"wang",
+        "age":"17"
+      }
+    },
+    "response":{
+      "text":"正确",
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      }
+    }
+  },
+  {
+    "description":"模拟一个post请求",
+    "request":{
+      "uri":"/postdemo",
+      "method":"post"
+    },
+    "response":{
+      "text":"第一个mock的post请求",
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      }
+    }
+  },
+  {
+    "description":"带参数的post请求",
+    "request":{
+      "uri":"/postwithparam",
+      "method":"post",
+      "forms":{
+        "name":"wang",
+        "age":"17"
+      }
+    },
+    "response":{
+      "text":"带参数post",
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      }
+    }
+  },
+  {
+    "description":"带cookies信息的get请求",
+    "request":{
+      "uri":"/get/with/cookies",
+      "method":"get",
+      "cookies":{
+        "login":"true"
+      }
+    },
+    "response":{
+      "text":"这是一个需要携带cookies信息才能访问的get请求",
+      "headers":{
+        "Content-Type":"text/html;charset=gbk"
+      }
+    }
+  },
+  {
+    "description":"这是一个带cookies的post请求",
+    "request":{
+      "uri":"/post/with/cookies",
+      "method":"post",
+      "cookies":{
+        "login":"true"
+      },
+      "json":{
+        "name":"wang",
+        "age":"17"
+      }
+    },
+    "response":{
+      "json":{
+        "name":"wwwwww",
+        "age":"1111111"
+      }
+    }
+  },
+  {
+    "description":"带header信息的post请求",
+    "request": {
+      "uri": "/post/with/headers",
+      "method": "post",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "forms": {
+        "name": "wang",
+        "age": "17"
+      }
+    },
+    "response":{
+      "json":{
+        "status":"111",
+        "s":"success"
+      }
+    }
+  }
+]
