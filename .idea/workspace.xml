@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93d11605-78e0-40e2-a1d5-bf03d7adf212" name="默认的" comment="默认的">
-      <change afterPath="$PROJECT_DIR$/Demo/src/test/java/com/wang/selenium/PrintTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Demo/element.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Demo/element.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Demo/src/test/java/com/wang/selenium/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/Demo/src/test/java/com/wang/selenium/Login.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/Chapter/target/" />
@@ -101,19 +100,19 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="3" />
-          <entry key="java" value="5459" />
+          <entry key="java" value="5859" />
           <entry key="json" value="1392" />
-          <entry key="properties" value="47" />
+          <entry key="properties" value="61" />
           <entry key="xml" value="2103" />
           <entry key="基本操作说明" value="51" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5459" />
+          <entry key="JAVA" value="5859" />
           <entry key="JSON" value="1392" />
           <entry key="PLAIN_TEXT" value="54" />
-          <entry key="Properties" value="47" />
+          <entry key="Properties" value="61" />
           <entry key="XML" value="2103" />
         </counts>
       </usages-collector>
@@ -124,8 +123,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Demo/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="1" column="42" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
+            <state relative-caret-position="510">
+              <caret line="17" column="32" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -133,8 +132,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Demo/src/test/java/com/wang/selenium/PrintTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="150">
+              <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
               <folding>
                 <element signature="e#96#97#0" expanded="true" />
                 <element signature="e#139#140#0" expanded="true" />
@@ -146,10 +145,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Demo/src/test/java/com/wang/selenium/Login.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="317">
+              <caret line="44" column="31" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#3559#3574#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -158,8 +158,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Demo/element.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+            <state relative-caret-position="150">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
         </entry>
@@ -167,8 +167,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Demo/src/test/java/com/wang/selenium/ProUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+            <state relative-caret-position="810">
+              <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -242,9 +242,9 @@
         <option value="$PROJECT_DIR$/Chapter7/基本操作说明" />
         <option value="$PROJECT_DIR$/Demo/src/main/java/demo.java" />
         <option value="$PROJECT_DIR$/Demo/pom.xml" />
-        <option value="$PROJECT_DIR$/Demo/element.properties" />
         <option value="$PROJECT_DIR$/Demo/src/test/java/com/wang/selenium/ProUtil.java" />
         <option value="$PROJECT_DIR$/Demo/src/test/java/com/wang/selenium/PrintTest.java" />
+        <option value="$PROJECT_DIR$/Demo/element.properties" />
         <option value="$PROJECT_DIR$/Demo/src/test/java/com/wang/selenium/Login.java" />
       </list>
     </option>
@@ -332,7 +332,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541519670976" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541525438662" />
     <property name="jdk.selected.JAVA_MODULE" value="1.7" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="项目" />
@@ -567,7 +567,7 @@
       <workItem from="1541323725056" duration="384000" />
       <workItem from="1541326089213" duration="317000" />
       <workItem from="1541509777450" duration="7752000" />
-      <workItem from="1541519449004" duration="217000" />
+      <workItem from="1541519449004" duration="5895000" />
     </task>
     <task id="LOCAL-00001" summary="默认的">
       <created>1541518577393</created>
@@ -576,7 +576,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541518577393</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="默认的">
+      <created>1541519789527</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1541519789527</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -612,7 +619,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100606000" />
+    <option name="totallyTimeSpent" value="106188000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -982,34 +989,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Demo/src/test/java/com/wang/selenium/element.properties" />
-    <entry file="file://$PROJECT_DIR$/Demo/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="1" column="42" selection-start-line="1" selection-start-column="42" selection-end-line="1" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Demo/element.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Demo/src/test/java/com/wang/selenium/ProUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Demo/src/test/java/com/wang/selenium/PrintTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="150">
+          <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
           <folding>
             <element signature="e#96#97#0" expanded="true" />
             <element signature="e#139#140#0" expanded="true" />
@@ -1017,12 +1000,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Demo/src/test/java/com/wang/selenium/Login.java">
+    <entry file="file://$PROJECT_DIR$/Demo/element.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="150">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo/src/test/java/com/wang/selenium/ProUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Demo/src/test/java/com/wang/selenium/Login.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="44" column="31" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3559#3574#0" expanded="true" />
           </folding>
         </state>
       </provider>

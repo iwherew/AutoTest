@@ -7,6 +7,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
 import javax.swing.*;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 
 public class Login {
     public WebDriver driver;
@@ -19,12 +22,15 @@ public class Login {
         driver.findElement(By.id("js-signin-btn")).click();
     }
 
-    public void loginScript() throws Exception {
+    public void loginScript(String username,String userpass,String testName) throws Exception {
         this.InitDriver();
+        /*
         String username = "18768113917";
+        String userpass = "123456";
+
+        /*
         String userBy = "name";
         String emailElement = "email";
-        String userpass = "123456";
         String passBy="name";
         String passwordElement = "password";
         String bottonBy = "className";
@@ -34,18 +40,17 @@ public class Login {
         String nameBy = "className";
         String nameElement = "name";
         String testName = "慕粉7252703";
+        */
 
-        ProUtil properties = new ProUtil("D:\\Workspaces\\muke\\AutoTest\\Demo\\element.properties");
-        String locator = properties.getPro("username");
-        String locatorType = locator.split(">")[0];
-        String locatorValue = locator.split(">")[1];
+//        String testName = "我只想摸鱼";
+
 
         Thread.sleep(2000);
-        WebElement user = this.element(this.byStr(locatorType,locatorValue));
+        WebElement user = this.element(this.byStr("username"));
         user.isDisplayed();
-        WebElement password = this.element(this.byStr(passBy,passwordElement));
+        WebElement password = this.element(this.byStr("userpass"));
         password.isDisplayed();
-        WebElement loginButton = this.element(this.byStr(bottonBy,bottonElement));
+        WebElement loginButton = this.element(this.byStr("loginButton"));
         loginButton.isDisplayed();
         user.sendKeys(username);
         password.sendKeys(userpass);
@@ -54,29 +59,37 @@ public class Login {
         loginButton.click();
 //        driver.findElement(By.partialLinkText("无法登录")).click();
         Thread.sleep(2000);
-        WebElement header = this.element(this.byStr(headerBy,headerElement));
+        WebElement header = this.element(this.byStr("header"));
         header.isDisplayed();
         Actions actions = new Actions(driver);
         actions.moveToElement(header).perform();
-        String userInfo = this.element(this.byStr(nameBy,nameElement)).getText();
+        String userInfo = this.element(this.byStr("nameInfo")).getText();
         if(userInfo.equals(testName)){
             System.out.println("登录成功");
         }else{
             System.out.println("登录失败");
         }
+//        driver.quit();
+//        driver.close();
+
 //        System.out.println(userInfo);
     }
 
     /*封装By*/
-    public By byStr(String by,String local){
-        if(by.equals("id")){
-            return By.id(local);
-        }else if(by.equals("name")){
-            return By.name(local);
-        }else if(by.equals("className")){
-            return By.className(local);
+    public By byStr(String elementKey) throws Exception {
+        ProUtil properties = new ProUtil("D:\\Workspaces\\muke\\AutoTest\\Demo\\element.properties");
+        String locator = properties.getPro(elementKey);
+        String locatorType = locator.split(">")[0];
+        String locatorValue = locator.split(">")[1];
+
+        if(locatorType.equals("id")){
+            return By.id(locatorValue);
+        }else if(locatorType.equals("name")){
+            return By.name(locatorValue);
+        }else if(locatorType.equals("className")){
+            return By.className(locatorValue);
         }else{
-            return By.xpath(local);
+            return By.xpath(locatorValue);
         }
     }
 
@@ -88,6 +101,19 @@ public class Login {
 
     public static void main(String[] args) throws Exception {
         Login login = new Login();
-        login.loginScript();
+//        login.loginScript("18768113917","123456");
+
+        HashMap<String,String> user = new HashMap<String,String>();
+        user.put("18768113917","123456>我只想摸鱼");
+        user.put("18767175519","123456789>摸鱼多好");
+        Iterator us = user.entrySet().iterator();
+        while(us.hasNext()){
+            Map.Entry entry = (Map.Entry)us.next();
+            String username = entry.getKey().toString();
+            String password = entry.getValue().toString().split(">")[0];
+            String userInfo = entry.getValue().toString().split(">")[1];
+//            System.out.println(username+" "+password);
+            login.loginScript(username,password,userInfo);
+        }
     }
 }
