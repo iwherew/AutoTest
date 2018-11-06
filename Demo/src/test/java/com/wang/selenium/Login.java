@@ -35,13 +35,13 @@ public class Login {
         String nameElement = "name";
         String testName = "慕粉7252703";
 
-//        ProUtil properties = new ProUtil("D:\\Workspaces\\muke\\AutoTest\\Demo\\element.properties");
-//        String locator = properties.getPro("username");
-//        String locatorType = locator.split(">")[0];
-//        String locatorValue = locator.split(">")[1];
+        ProUtil properties = new ProUtil("D:\\Workspaces\\muke\\AutoTest\\Demo\\element.properties");
+        String locator = properties.getPro("username");
+        String locatorType = locator.split(">")[0];
+        String locatorValue = locator.split(">")[1];
 
         Thread.sleep(2000);
-        WebElement user = this.element(this.byStr(userBy,emailElement));
+        WebElement user = this.element(this.byStr(locatorType,locatorValue));
         user.isDisplayed();
         WebElement password = this.element(this.byStr(passBy,passwordElement));
         password.isDisplayed();
